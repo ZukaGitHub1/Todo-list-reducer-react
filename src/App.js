@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Loader from './Components/Loader/Loader';
+
+import PostLists from './Components/PostLists/PostLists';
+import withLoading from './hocs/withLoading';
+
+
+
 
 function App() {
+    
+
+
+ const Pagacalist = withLoading(PostLists, Loader);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+       
+       <Pagacalist/>
+        
+       
+
+        
+
     </div>
   );
 }

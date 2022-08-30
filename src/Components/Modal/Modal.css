@@ -1,0 +1,26 @@
+.modal {
+  z-index: 100;
+  background: rgb(157, 129, 129);
+  position: relative;
+  margin: 1.75rem auto;
+  border-radius: 3px;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+.modal span {
+  display: flex;
+  align-items: center;
+}
+
+
+.modal button {
+  color: white;
+  cursor: pointer;
+  font-size: .9rem;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: .6rem;
+  margin-left: .5rem;
+  background-color: black;
+}
